@@ -16,6 +16,10 @@ public class Person {
                 '}';
     }
 
+    public Person(Integer i) {
+        System.out.println(i);
+    }
+
     public Person(String name, Integer sex, Integer age, Integer salary) {
         this.name = name;
         this.sex = sex;

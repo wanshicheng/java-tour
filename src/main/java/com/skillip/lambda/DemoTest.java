@@ -36,4 +36,31 @@ public class DemoTest {
       }
   }
 
+  @Test
+  public void test4() {
+      List<Person> results = getPersons(new PersonInterface() {
+          public boolean personCPR(Person person) {
+              return false;
+          }
+      });
+      for (Person person : persons) {
+          getPersons(new PersonInterface() {
+              public boolean personCPR(Person person) {
+
+                  return person.getAge() > 20;
+              }
+          });
+      }
+  }
+
+  public List<Person> getPersons(PersonInterface pi) {
+      List<Person> results = new ArrayList<Person>();
+      for (Person p : persons) {
+          if(pi.personCPR(p)) {
+              results.add(p);
+          }
+      }
+      return results;
+  }
+
 }
