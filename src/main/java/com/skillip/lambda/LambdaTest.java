@@ -1,5 +1,7 @@
 package com.skillip.lambda;
 
+import com.skillip.lambda.demo.Person;
+
 import java.lang.reflect.Array;
 import java.util.AbstractList;
 import java.util.Arrays;
@@ -14,7 +16,7 @@ public class LambdaTest {
 //        list.add(new Integer(5));
 //        System.out.println(list.get(0).getClass());
 
-        Function<Integer, Person> f = Person::new; 
+        Function<Integer, Person> f = Person::new;
 
         System.out.println(f.getClass());
     }
