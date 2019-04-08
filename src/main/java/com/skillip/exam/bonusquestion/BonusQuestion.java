@@ -1,4 +1,4 @@
-package com.skillip.exam;
+package com.skillip.exam.bonusquestion;
 
 import org.junit.Test;
 
