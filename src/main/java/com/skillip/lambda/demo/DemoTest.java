@@ -23,10 +23,7 @@ public class DemoTest {
         persons.add(new Person("gg", 1, 19, 1700));
     }
 
-    @Test
-    public void test6() {
 
-    }
     @Test
     public void test5(){
         persons.stream().filter(x -> x.getSex()==0).forEach(System.out::println);

@@ -9,10 +9,6 @@ public class Person {
     private Integer sex;
     private Integer age;
     private Integer salary;
-
-    public Person(Integer integer) {
-    }
-
     public String getName() {
         return name;
     }
