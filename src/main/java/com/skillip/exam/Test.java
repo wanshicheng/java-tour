@@ -1,26 +1,29 @@
 package com.skillip.exam;
 
 public class Test {
-    static int x, y, z;
-
-    static {
-        int x = 5;
-        x--;
-    }
-
-    static {
-        x--;
-    }
-
     public static void main(String[] args) {
-        System.out.println("x=" + x);
-        z--;
-        method();
-        System.out.println("result:" + (z + y + ++z));
+        Base b1 = new Base();
+        Base b2 = new Sub();
+    }
+}
+
+class Base {
+    Base () {
+        method(100);
     }
 
-    public static void method() {
-        y = z++ + ++z;
+    public void method(int i) {
+        System.out.println("base:" + i);
+    }
+}
+
+class Sub extends Base{
+    Sub () {
+        super.method(70);
     }
 
+    @Override
+    public void method(int i) {
+        System.out.println("sub:" + i);
+    }
 }
