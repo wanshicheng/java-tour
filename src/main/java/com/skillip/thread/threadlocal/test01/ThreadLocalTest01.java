@@ -1,4 +1,4 @@
-package com.skillip.thread.threadlocal;
+package com.skillip.thread.threadlocal.test01;
 
 public class ThreadLocalTest01 {
     public static ThreadLocal t1 = new ThreadLocal();

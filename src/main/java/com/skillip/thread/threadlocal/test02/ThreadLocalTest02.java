@@ -1,4 +1,4 @@
-package com.skillip.thread.threadlocal.ThreadLocalTest02;
+package com.skillip.thread.threadlocal.test02;
 
 // 验证线程变量的隔离性
 public class ThreadLocalTest02 {

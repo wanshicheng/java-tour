@@ -1,4 +1,4 @@
-package com.skillip.thread.threadlocal.ThreadLocalTest02;
+package com.skillip.thread.threadlocal.test02;
 
 public class ThreadA extends Thread {
 
