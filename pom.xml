@@ -6,7 +6,12 @@
 
     <groupId>com.skillip</groupId>
     <artifactId>java-tour</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>design-pattern</module>
+        <module>basic</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
