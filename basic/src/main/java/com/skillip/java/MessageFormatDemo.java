@@ -1,4 +1,4 @@
-package com.skillip.basic;
+package com.skillip.java;
 
 import org.junit.Test;
 
@@ -46,5 +46,12 @@ public class MessageFormatDemo {
         System.out.println(value1); // 结果12
         System.out.println(value2); // 结果{0}{1}
         System.out.println(value3); // 结果{0}-2
+    }
+
+    @Test
+    public void test4() {
+        boolean[] flags = new boolean[10];
+        System.out.println(flags[0]);
+
     }
 }
