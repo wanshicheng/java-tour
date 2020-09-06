@@ -3,50 +3,41 @@ package com.skillip.java;
 import java.util.*;
 
 public class Solution {
-    public List<List<String>> displayTable(List<List<String>> orders) {
-        Map<String, Map<String, Integer>> tableOrder = new HashMap<>();
-        Map<String, Integer> foodMap = new HashMap<>();
-        int sort = 1;
+    private int[] tmp;
+    public int[] sortArray(int[] nums) {
+        tmp = new int[nums.length];
+        mergeSort(nums, 0, nums.length - 1);
+        return tmp;
+    }
 
-        for (List<String> order : orders) {
-            String tableNumber = order.get(1);
-            String foodItem = order.get(2);
-            Map<String, Integer> map = tableOrder.getOrDefault(tableNumber, new HashMap<>());
-            int count = map.getOrDefault(foodItem, 0) + 1;
-            map.put(foodItem, count);
-            tableOrder.put(tableNumber, map);
+    private void mergeSort(int[] nums, int l, int r) {
+        if(l < r) {
+            int m = (l + r) / 2;
+            mergeSort(nums, l, m);
+            mergeSort(nums, m + 1, r);
+            int i = l;
+            int j = m + 1;
+            int cnt = 0;
+            while(i <= m && j <= r) {
+                if(nums[i] < nums[j]) {
+                    tmp[cnt++] = nums[i++];
+                }else {
+                    tmp[cnt++] = nums[j++];
+                }
+            }
+            while(i <= m) tmp[cnt++] = nums[i++];
+            while(j <= r) tmp[cnt++] = nums[j++];
 
-            if(!foodMap.containsKey(foodItem)) {
-                foodMap.put(foodItem, sort);
-                sort++;
+            int n = 0;
+            while(n < r - l + 1) {
+                nums[n + l] = tmp[n];
+                n++;
             }
         }
-
-        List<List<String>> out = new LinkedList<>();
-        List<String> first = new ArrayList<>(foodMap.size() + 1);
-        first.set(0, "Table");
-        for (Map.Entry<String, Integer> entry : foodMap.entrySet()) {
-            first.set(entry.getValue(), entry.getKey());
-        }
-        out.set(0, first);
-
-        for (Map.Entry<String, Map<String, Integer>> entry : tableOrder.entrySet()) {
-            List<String> subOut = new ArrayList<>();
-            subOut.set(0, entry.getKey());
-
-            Map<String, Integer> map = entry.getValue();
-            for (Map.Entry<String, Integer> ent : map.entrySet()) {
-                String foodItem = ent.getKey();
-                Integer count = ent.getValue();
-                Integer num = foodMap.get(foodItem);
-                subOut.set(num, String.valueOf(count));
-            }
-            out.add(subOut);
-        }
-        return out;
     }
 
     public static void main(String[] args) {
-
+        int[] arr = {3,4,6,2};
+        System.out.println(Arrays.toString(new Solution().sortArray(arr)));
     }
 }
