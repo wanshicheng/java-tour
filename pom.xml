@@ -11,6 +11,8 @@
     <modules>
         <module>design-pattern</module>
         <module>basic</module>
+        <module>shade-tour</module>
+        <module>disruptor-tour</module>
     </modules>
     <dependencies>
         <dependency>
