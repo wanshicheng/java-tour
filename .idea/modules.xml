@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-pattern/design-pattern.iml" filepath="$PROJECT_DIR$/design-pattern/design-pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/disruptor-tour/disruptor-tour.iml" filepath="$PROJECT_DIR$/disruptor-tour/disruptor-tour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hikaricp-tour/hikaricp-tour.iml" filepath="$PROJECT_DIR$/hikaricp-tour/hikaricp-tour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-tour.iml" filepath="$PROJECT_DIR$/java-tour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shade-tour/shade-tour.iml" filepath="$PROJECT_DIR$/shade-tour/shade-tour.iml" />
+    </modules>
+  </component>
+</project>

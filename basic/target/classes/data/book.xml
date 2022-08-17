@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <cooperator code="bsg">
+        <comefrom code="bsg001">
+            <ip>
+            </ip>
+            <key><![CDATA[Tc7ib084USQ5LCEmaaBUlNDLXSLvWQlcEepFWdcV8Ac44RFShWxNXhBexKkhDn8g]]></key>
+            <synccallback>http://skillip.com/return.jsp</synccallback>
+            <timeinterval>30</timeinterval>
+        </comefrom>
+    </cooperator>
+</config>

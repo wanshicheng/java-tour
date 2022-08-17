@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="design-pattern" />
+        <module name="basic" />
+        <module name="hikaricp-tour" />
+        <module name="shade-tour" />
+        <module name="disruptor-tour" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="basic" target="1.8" />
+      <module name="design-pattern" target="1.8" />
+      <module name="disruptor-tour" target="1.8" />
+      <module name="hikalicp-tour" target="1.8" />
+      <module name="hikaricp-tour" target="1.8" />
+      <module name="java-tour" target="1.8" />
+      <module name="shade-tour" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

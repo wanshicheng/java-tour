@@ -13,6 +13,7 @@
         <module>basic</module>
         <module>shade-tour</module>
         <module>disruptor-tour</module>
+        <module>hikaricp-tour</module>
     </modules>
     <dependencies>
         <dependency>
